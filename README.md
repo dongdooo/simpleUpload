@@ -114,7 +114,7 @@ e o atributo `type` com o valor 'fileType'
 ```javascript
 $('#simpleUpload').simpleUpload({
 	types: ['jpg', 'png', 'pdf'],
-	error: function(erro){
+	error: function(error){
 		if(error.type == 'fileType') alert('Arquivo inválido.');
 	}
 });
@@ -130,7 +130,7 @@ e o atributo `type` com o valor 'size'
 $('#simpleUpload').simpleUpload({
 	size: 3072, // 3 mb
 	types: ['jpg', 'png', 'pdf'],
-	error: function(erro){
+	error: function(error){
 		if(error.type == 'size'){
 			alert('Tamanho não permitido.');
 		}else if(error.type == 'fileType'){
